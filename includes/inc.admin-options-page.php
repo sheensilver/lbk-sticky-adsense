@@ -40,19 +40,19 @@
 	<tbody>
 		<tr>
 			<th><label for="main_content_width">Chiều rộng khối nội dung</label></th>
-			<td><input  type="number" name="main_content_width" id="main_content_width" value="<?php echo (get_option('main_content_width') !== '') ? get_option('main_content_width')  : "1200" ?>" class="regular-text" onchange="myScript()"><span class ="description">Chiều rộng hay gặp: 1024 - 1200 - 1280 - 1366 - 1440... </span></td>
+			<td><input  type="number" name="main_content_width" id="main_content_width" value="<?php echo esc_attr(get_option('main_content_width') !== '') ? get_option('main_content_width')  : "1200" ?>" class="regular-text" onchange="myScript()"><span class ="description">Chiều rộng hay gặp: 1024 - 1200 - 1280 - 1366 - 1440... </span></td>
 		</tr>
 		<tr>
 			<th><label for="sticky_adsense_col_width">Chiều rộng khối quảng cáo</label></th>
-			<td><input type="number" name="sticky_adsense_col_width" id="sticky_adsense_col_width" value="<?php echo (get_option('sticky_adsense_col_width') !== '') ? get_option('sticky_adsense_col_width')  : "200" ?>" class="regular-text" onchange="myScript()"><span class ="description">Chiều rộng hay gặp: 200 - 250 </span></td>
+			<td><input type="number" name="sticky_adsense_col_width" id="sticky_adsense_col_width" value="<?php echo esc_attr(get_option('sticky_adsense_col_width') !== '') ? get_option('sticky_adsense_col_width')  : "200" ?>" class="regular-text" onchange="myScript()"><span class ="description">Chiều rộng hay gặp: 200 - 250 </span></td>
 		</tr>
 		<tr>
 			<th><label for="sticky_adsense_top_space">Khoảng cách đến phía trên</label></th>
-			<td><input type="number" name="sticky_adsense_top_space" id="sticky_adsense_top_space" value="<?php echo (get_option('sticky_adsense_top_space') !== '') ? get_option('sticky_adsense_top_space')  : "150" ?>" class="regular-text"><span class ="description">Khoảng cách hay gặp: 100 - 150 </span></td>
+			<td><input type="number" name="sticky_adsense_top_space" id="sticky_adsense_top_space" value="<?php echo esc_attr(get_option('sticky_adsense_top_space') !== '') ? get_option('sticky_adsense_top_space')  : "150" ?>" class="regular-text"><span class ="description">Khoảng cách hay gặp: 100 - 150 </span></td>
 		</tr>
 		<tr>
 			<th><label for="sticky_adsense_space">Khoảng cách giữa quảng cáo và nội dung</label></th>
-			<td><input type="number" name="sticky_adsense_space" id="sticky_adsense_space" value="<?php echo (get_option('sticky_adsense_space') !== '') ? get_option('sticky_adsense_space')  : "0" ?>" class="regular-text" onchange="myScript()"></td>
+			<td><input type="number" name="sticky_adsense_space" id="sticky_adsense_space" value="<?php echo esc_attr(get_option('sticky_adsense_space') !== '') ? get_option('sticky_adsense_space')  : "0" ?>" class="regular-text" onchange="myScript()"></td>
 		</tr>
 		<p class="description sticty_adsense_message "></p>
 

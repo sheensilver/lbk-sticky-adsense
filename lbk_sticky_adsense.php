@@ -3,7 +3,7 @@
  * LBK Sticky Adsense
  * 
  * @package LBK Sticky Adsense
- * @author Dương Quang Phong
+ * @author LBK
  * @copyright 2021 LBK
  * @license GPL-2.0-or-later
  * @category plugin
@@ -11,12 +11,12 @@
  * 
  * @wordpress-plugin
  * Plugin Name:       LBK Sticky Adsense
- * Plugin URI:        https://lbk.vn/fixed-contact
+ * Plugin URI:        https://lbk.vn/
  * Description:       LBK Sticky Adsense always appear on the website
  * Version:           1.0.0
  * Requires at least: 1.0.0
  * Requires PHP:      7.4
- * Author:            Dương Quang Phong
+ * Author:            LBK
  * Author             URI: https://www.facebook.com/profile.php?id=100008413214141
  * Text Domain:       lbk-sticky-adsense
  * License:           GPLv2 or later

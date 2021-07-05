@@ -26,12 +26,12 @@ if(!function_exists('lbk_sticky_adsense_frontend')) {
 			overflow: hidden;
 		}
 		#sticky-adsense .adsbygoogle {
-			width: <?php echo get_option('sticky_adsense_col_width').'px' ?>
+			width: <?php echo esc_attr(get_option('sticky_adsense_col_width')).'px' ?>
 		}
 		</style>
 		<div id = "sticky-adsense">
-					<div class = "sticky-adsense__left"><?php echo get_option('sticky_adsense_left_col'); ?></div>
-					<div class = "sticky-adsense__right"><?php echo get_option('sticky_adsense_right_col'); ?></div>
+					<div class = "sticky-adsense__left"><?php echo esc_attr(get_option('sticky_adsense_left_col')); ?></div>
+					<div class = "sticky-adsense__right"><?php echo esc_attr(get_option('sticky_adsense_right_col')); ?></div>
 				</div>
 
 				<script>
@@ -41,10 +41,10 @@ if(!function_exists('lbk_sticky_adsense_frontend')) {
 						var stickyAdsenseLeftDiv =  document.querySelector('.sticky-adsense__left');
 						var stickyAdsenseRightDiv =  document.querySelector('.sticky-adsense__right');
 						
-						var contentWidth = <?php  echo get_option('main_content_width'); ?>;
-						var stickyAdsenseDivWidth = <?php  echo get_option('sticky_adsense_col_width');?>;
-						var adsenseTopSpace = <?php echo get_option('sticky_adsense_top_space'); ?>;
-						var adsenseSpace = <?php echo get_option('sticky_adsense_space'); ?>;
+						var contentWidth = <?php  echo esc_attr(get_option('main_content_width')); ?>;
+						var stickyAdsenseDivWidth = <?php  echo esc_attr(get_option('sticky_adsense_col_width'));?>;
+						var adsenseTopSpace = <?php echo esc_attr(get_option('sticky_adsense_top_space')); ?>;
+						var adsenseSpace = <?php echo esc_attr(get_option('sticky_adsense_space')); ?>;
 						var adsenseArea = window.innerWidth - contentWidth;
 	
 						if(adsenseArea >= (2*stickyAdsenseDivWidth + 2*adsenseSpace)) {
